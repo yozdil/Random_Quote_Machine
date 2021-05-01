@@ -46,7 +46,7 @@ function App() {
             <Grid.Row centered>
               <Button id="new-quote" fluid onClick={newQuote} secondary size='big'>
                 <Icon name="comment outline" />
-                New Quote
+                Generate New Quote
               </Button>
             </Grid.Row>
             <Grid.Row centered className="social">
