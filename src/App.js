@@ -1,41 +1,46 @@
 import "./styles/wrapper.scss";
-import { Button, Container, Card } from "semantic-ui-react";
+import { Grid, Header, Button, Card, Icon } from "semantic-ui-react";
 
 function App() {
   return (
     <div id="wrapper">
       <Card id="quote-box">
-        <Container text class="quote-text">
-          <span id="text"></span>
-        </Container>
-        <div class="quote-author">
-          - <span id="author"></span>
-        </div>
-        <div class="buttons">
-          <a
-            class="button"
-            id="tweet-quote"
-            title="Tweet this quote!"
-            target="_top"
-          >
-            Twitter
-          </a>
-          <a
-            class="button"
-            id="tumblr-quote"
-            title="Post this quote on tumblr!"
-            target="_blank"
-          >
-            Tumblr
-          </a>
-          <Button secondary id="new-quote">
-            New quote
-          </Button>
-        </div>
+        <Card.Content>
+          <Card.Header>
+            <Icon name="quote left" />
+            <Header as="h1" id="text">
+              I have been impressed with theurgency of doing. Knowing is not
+              enough; we must apply. Being willing is not enough; we must do.
+            </Header>
+            <Icon name="quote right" />
+          </Card.Header>
+          <Card.Meta>
+            <Header as="h3" floated="right">
+              - Leonardo da Vinci
+            </Header>
+          </Card.Meta>
+        </Card.Content>
+        <Card.Content extra>
+          <Grid>
+            <Grid.Row centered>
+              <Button secondary>
+                <i class="comment outline icon"></i>
+                New Quote
+              </Button>
+            </Grid.Row>
+            <Grid.Row centered columns={2}>
+              <Button primary>
+                <i class="twitter icon"></i>
+                Twitter
+              </Button>
+              <Button primary>
+                <i class="tumblr icon"></i>
+                Tumblr
+              </Button>
+            </Grid.Row>
+          </Grid>
+        </Card.Content>
       </Card>
-      <div class="footer">
-        {/* by <a href="https://codepen.io/hezag/">hezag</a> */}
-      </div>
     </div>
   );
 }

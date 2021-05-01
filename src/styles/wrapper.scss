@@ -1,7 +1,18 @@
 #wrapper {
   height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
+  justify-content: center;
+  background-color: antiquewhite;
+
+  #quote-box {
+    min-height: 30vh;
+    min-width: 30vw;
+    max-height: 50vh;
+    padding: 1em;
+  }
+  .buttons {
+    position: absolute;
+    bottom: 0px;
+  }
 }
