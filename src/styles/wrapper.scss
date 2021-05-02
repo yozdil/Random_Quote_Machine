@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   background-color: black;
+  background-image: url('./background.png');
 }
 
 #wrapper {
@@ -11,6 +12,8 @@
     border-radius: 0.5em;
     min-width: 35vw;
     padding: 0.5em;
+    background-image: url('./box.png');
+
   }
 
   #new-quote {
