@@ -7,7 +7,7 @@
 
 ![alt text](public/app.png)
 
-This project was done for Front End Development Libraries Certification at [freeCodeCamp](https://www.freecodecamp.org). At it's core it uses React and Semantic UI for simple visuals and mobile responsiveness. Quotes are simply fetched via Axios and the user can generate a new quote to share on Twitter or Tumblr.
+[Random Quote Machine](https://csb-wfx43.netlify.app/) was done for Front End Development Libraries Certification at [freeCodeCamp](https://www.freecodecamp.org). At it's core it uses React and Semantic UI for simple visuals and mobile responsiveness. Quotes are simply fetched via Axios and the user can generate a new quote to share on Twitter or Tumblr.
 
 ## Setup
 
