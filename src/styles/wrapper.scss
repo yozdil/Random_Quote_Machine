@@ -1,18 +1,22 @@
-#wrapper {
-  // height: 100vh;
+#root{
+  height: 100vh;
   display: flex;
-  // align-items: center;
+  align-items: center;
   justify-content: center;
-  background-color: antiquewhite;
+  background-color: black;
+}
 
+#wrapper {
   #quote-box {
-    // min-height: 30vh;
+    border-radius: 0.5em;
     min-width: 35vw;
-    // max-height: 600px;
-    // padding: 1em;
+    padding: 0.5em;
+
   }
-  .buttons {
-    position: absolute;
-    bottom: 0px;
+
+  #new-quote {
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 1em;
   }
 }
