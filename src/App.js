@@ -1,14 +1,5 @@
 import "./styles/wrapper.scss";
-import {
-  Grid,
-  Header,
-  Button,
-  Card,
-  Icon,
-  Segment,
-  Reveal,
-  Image,
-} from "semantic-ui-react";
+import { Grid, Header, Button, Card, Icon, Segment } from "semantic-ui-react";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -65,7 +56,14 @@ function App() {
               </Button>
             </Grid.Row>
             <Grid.Row centered className="social">
-              <a id="tweet-quote" target="_top" className="button">
+              <a
+                id="tweet-quote"
+                target="_top"
+                className="button"
+                href={`https://twitter.com/intent/tweet?hashtags=yozdil&related=freecodecamp&text=${encodeURIComponent(
+                  '"' + quote.quote + '" - ' + quote.author
+                )}`}
+              >
                 <Segment floated="left" color="blue" raised>
                   <Icon name="twitter" />
                   Twitter
