@@ -1,5 +1,14 @@
 import "./styles/wrapper.scss";
-import { Grid, Header, Button, Card, Icon, Segment } from "semantic-ui-react";
+import {
+  Grid,
+  Header,
+  Button,
+  Card,
+  Icon,
+  Segment,
+  Reveal,
+  Image,
+} from "semantic-ui-react";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -44,7 +53,13 @@ function App() {
         <Card.Content extra>
           <Grid>
             <Grid.Row centered>
-              <Button id="new-quote" fluid onClick={newQuote} secondary size='big'>
+              <Button
+                id="new-quote"
+                fluid
+                onClick={newQuote}
+                secondary
+                size="big"
+              >
                 <Icon name="comment outline" />
                 Generate New Quote
               </Button>
@@ -57,7 +72,16 @@ function App() {
                 </Segment>
               </a>
 
-              <a id="tumblr-quote" target="_blank" className="button">
+              <a
+                id="tumblr-quote"
+                target="_blank"
+                className="button"
+                href={`https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes, yozdil&caption=${encodeURIComponent(
+                  quote.author
+                )}&content=${encodeURIComponent(
+                  quote.quote
+                )}&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button`}
+              >
                 <Segment floated="right" color="blue" raised>
                   <Icon name="tumblr" />
                   Tumblr
@@ -67,6 +91,11 @@ function App() {
           </Grid>
         </Card.Content>
       </Card>
+      <a href="https://yamacozdil.com/">
+        <Header floated="right" color="blue" as="h4">
+          by Yamac Ozdil
+        </Header>
+      </a>
     </div>
   );
 }
